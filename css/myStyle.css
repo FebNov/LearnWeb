@@ -1,0 +1,96 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+main {
+  width: 800px;
+  margin: auto;
+}
+
+.flip-container {
+  perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+  width: 320px;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: black 5px 10px;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+.frontImg {
+  width: 320px;
+  height: 480px;
+  opacity: 0.8;
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+.backInfo {
+  background: rgb(236, 229, 229);
+  width: 320px;
+  height: 480px;
+  border: black 1px;
+  opacity: 0.7;
+}
+.backInfoAction {
+  animation: drop 5s ease-in infinite;
+  font-size: 13px;
+}
+@keyframes drop {
+  60%,
+  80%,
+  to {
+    transform: translateY(130px);
+    animation-timing-function: ease-out;
+  }
+  70% {
+    transform: translateY(100px);
+  }
+  90% {
+    transform: translateY(110px);
+  }
+}
+.nextOne {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.nextFrame {
+  font-size: 15px;
+  color: gray;
+}
