@@ -67,6 +67,12 @@ main {
   animation: drop 5s ease-in infinite;
   font-size: 13px;
 }
+
+.back > .backInfo > h1 {
+  font-size: 20px;
+  margin: auto;
+  padding: 20px;
+}
 @keyframes drop {
   60%,
   80%,
