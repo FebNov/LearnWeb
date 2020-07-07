@@ -3,11 +3,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-main {
-  width: 800px;
-  margin: auto;
-}
 
+.card--flexbox {
+  display: flex;
+  margin-left: 100px;
+  justify-content: space-around;
+}
 .flip-container {
   perspective: 1000;
 }

@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>摄影技巧</title>
-    <link rel="stylesheet" href="/css/cardstyle.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
     <!---<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
     <meta
       name="keywords"
@@ -10,27 +10,28 @@
   </head>
   <body>
     <main>
-      <div
-        class="flip-container"
+      <div class="card--flexbox">
+        <div
+        class="cardflip-container"
         ontouchstart="this.classList.toggle('hover');"
-      >
-        <div class="flipper">
-          <div class="front">
-            <img class="frontImg"
-              src="/src/SunDown.jpg"
+        >
+        <div class="cardflipper">
+          <div class="card--front">
+            <img class="card--frontImg"
+              src="/src/sundown.jpg"
               alt="Sun Down"
             
             />
             <!-- 前面内容 -->
           </div>
-          <div class="back">
-            <div class="backInfo">
+          <div class="card--back">
+            <div class="card--backInfo">
               
               <h1>
                 摄影技巧丨日出日落的实拍技法，拍摄技巧及参数设置
               </h1>
               <br>
-              <div class="backInfoAction">
+              <div class="card--backInfoAction">
               <p>
                 <ol>
                   <li>
@@ -46,7 +47,7 @@
               </p>
               </div>
               <!-- 背面内容 -->.
-              <div class="nextOne">
+              <div class="card--nextOne">
                 <a
                   href="https://www.sohu.com/a/295200240_120069517"
                   target="_blank"
@@ -58,6 +59,48 @@
                     More Detail
                   </h4>
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card--flexbox">
+        <div class="cardflip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="cardflipper">
+            <div class="card--front">
+              <img class="card--frontImg" src="/src/sundown.jpg" alt="Sun Down" />
+              <!-- 前面内容 -->
+            </div>
+            <div class="card--back">
+              <div class="card--backInfo">
+      
+                <h1>
+                  摄影技巧丨日出日落的实拍技法，拍摄技巧及参数设置
+                </h1>
+                <br>
+                <div class="card--backInfoAction">
+                  <p>
+                  <ol>
+                    <li>
+                      拍摄日出日落地点选择及时间选择
+                    </li>
+                    <li>
+                      拍摄日出日落的镜头和配件
+                    </li>
+                    <li>
+                      实拍技巧及参数设置
+                    </li>
+                  </ol>
+                  </p>
+                </div>
+                <!-- 背面内容 -->.
+                <div class="card--nextOne">
+                  <a href="https://www.sohu.com/a/295200240_120069517" target="_blank">
+                    <h4 class="nextFrame" onclick="innerHTML='Thank You for Watching'">
+                      More Detail
+                    </h4>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
